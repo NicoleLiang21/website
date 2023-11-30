@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Holo again!</h1>
+        <img src="blessing.png" alt="spotify.com" width="100" height="100">
+        <br>
+        <a href="https://open.spotify.com/track/7ajpbW6tBpqUI9foCtwlLw?si=bbd8c94f752c4ccc">祝福</a>
+
+        <br>
+        <br>
+
+        <!-- JavaScript function here -->
+        <script>
+            var pic;
+            function flap() {
+                if (pic == "wing1.png") {
+                    pic = "wing2.png"
+                }
+                else {
+                    pic = "wing1.png"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+        <img id="myImage" src="wing1.png" width="150" height="150">
+
+        <p>
+            <button type="button" onclick="flap()">Flap</button>
+        </p>
+
+    </body>
